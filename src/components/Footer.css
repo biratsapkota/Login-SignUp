@@ -1,0 +1,19 @@
+.footer_wrapper{
+    background-color:#666464;
+    height:100px;
+    position:relative;
+}
+.footer_head{
+    color:#000000;
+    position:absolute;
+    top:30px;
+    left:100px;
+}
+.copyright{
+    position:absolute;
+    bottom:0px;
+    color:#332c2c;
+    text-align: center;
+    border-top:1px solid #868484;
+    width:100%;
+}

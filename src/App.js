@@ -1,25 +1,42 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Header from './components/Header';
+import Login from './components/Login';
+import Signup from './components/Signup';
+import Footer from './components/Footer';
 import './App.css';
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      active_tab_id: 1,
+    }
+  }
+
+  activateTab = (id) =>{
+    this.setState({
+      active_tab_id: id,
+    })
+  }
   render() {
+    let { active_tab_id } = this.state;
+    let display = "";
+    if (active_tab_id === 1) {
+      display = (<Login activateTab = {this.activateTab}/>)
+    } else if (active_tab_id === 2) {
+      display = (<Signup />)
+    }
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Header />
+        <div className="hero-part">
+          <div className="hero-title">Welcome to our app</div>
+          <div className="login_signup">
+            {display}
+          </div>          
+        </div>
+        <Footer />
       </div>
     );
   }

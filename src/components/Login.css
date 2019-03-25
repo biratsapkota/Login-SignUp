@@ -1,0 +1,9 @@
+input{
+	display: block;
+	margin:20px 0;
+}
+
+.signup{
+	color:blue;
+	cursor:pointer;
+}

@@ -1,33 +1,26 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.hero-part{
+  background-image: url('https://res.cloudinary.com/dpy0mkwsp/image/upload/v1545326564/images/burger-istock.jpg');
+  height:100vh;
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:center;
+  
 }
-
-.App-link {
-  color: #61dafb;
+.hero-title{
+  font-size:70px;
+  color: #052531;
+  background-color:#d3cdcd7d;
+  height:max-content;
+  padding:150px 0;
+  margin:50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login_signup{
+  background-color:#ffffff45; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding:200px 80px; 
 }
