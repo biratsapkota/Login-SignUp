@@ -18,3 +18,47 @@ img{
 	top:0px;
 	left:100px;
 }
+
+.drawer_bar{
+	position:absolute;
+	top:25px;
+	right:70px;
+	font-size:30px;
+	color:#00A0FC;
+	cursor:pointer;
+}
+.drawer{
+	background-color:white;
+	position:absolute;
+	top:0;
+	right:0;
+	height:130vh;
+	width:30%;
+	text-align:center;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.13);
+	animation-name: moveInRight;
+	animation-duration: 0.5s;
+	z-index:999;
+}
+.drawer_item{
+	padding:50px 0 50px 0;	
+	border-bottom: 1px solid gray;
+}
+.drawer_close{
+	position:absolute;
+	bottom:300px;
+	right:50px;
+	font-size:30px;
+	color:#00A0FC;
+	cursor:pointer;	
+}
+
+@keyframes moveInRight{
+	0% {
+	  transform: translateX(200px);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+  
